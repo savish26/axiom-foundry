@@ -111,6 +111,18 @@
   .metric-pulse {
     animation: metric-pulse 2s ease-in-out infinite;
   }
+
+  .nebula-glow-purple {
+    text-shadow: 0 0 20px hsl(var(--nebula-purple) / 0.6), 0 0 40px hsl(var(--nebula-purple) / 0.3);
+  }
+
+  .nebula-glow-green {
+    text-shadow: 0 0 20px hsl(var(--nebula-green) / 0.6), 0 0 40px hsl(var(--nebula-green) / 0.3);
+  }
+
+  .glitch-text {
+    animation: glitch-skew 4s infinite linear alternate-reverse;
+  }
 }
 
 @keyframes scanline-move {
