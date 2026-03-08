@@ -43,6 +43,9 @@
     --amber-warn: 40 100% 50%;
     --glass: 228 15% 10%;
     --grid-line: 228 10% 14%;
+    --nebula-purple: 270 80% 79%;
+    --nebula-green: 153 100% 50%;
+    --nebula-alert: 0 80% 55%;
 
     --font-mono: 'JetBrains Mono', monospace;
     --font-heading: 'Inter', sans-serif;

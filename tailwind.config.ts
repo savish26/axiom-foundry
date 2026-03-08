@@ -55,6 +55,9 @@ export default {
         concrete: "hsl(var(--concrete))",
         cyan: "hsl(var(--cyan-glow))",
         amber: "hsl(var(--amber-warn))",
+        "nebula-purple": "hsl(var(--nebula-purple))",
+        "nebula-green": "hsl(var(--nebula-green))",
+        "nebula-alert": "hsl(var(--nebula-alert))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
