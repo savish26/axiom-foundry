@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroForge from "@/components/HeroForge";
+import Bottleneck from "@/components/Bottleneck";
+import Pipeline from "@/components/Pipeline";
+import Nebula from "@/components/Nebula";
+import Terminal from "@/components/Terminal";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background">
+      <HeroForge />
+      <Bottleneck />
+      <Pipeline />
+      <Nebula />
+      <Terminal />
+
+      {/* Footer */}
+      <footer className="border-t border-border py-6 px-4">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-center text-[10px] text-muted-foreground font-mono">
+          <span>© 2026 PROJECT_AXIOM // ALL_RIGHTS_RESERVED</span>
+          <span>BUILD_v0.9.1 // CLASSIFICATION: PARTNER_ACCESS</span>
+        </div>
+      </footer>
+    </main>
   );
 };
 
