@@ -122,7 +122,26 @@
 
   .glitch-text {
     animation: glitch-skew 4s infinite linear alternate-reverse;
-  }
+}
+
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  2% { transform: skew(2deg); }
+  4% { transform: skew(0deg); }
+  80% { transform: skew(0deg); }
+  82% { transform: skew(-1deg); }
+  84% { transform: skew(0deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-flash {
+  0%, 100% { opacity: 1; clip-path: inset(0 0 0 0); }
+  5% { opacity: 0.8; clip-path: inset(20% 0 30% 0); }
+  10% { opacity: 1; clip-path: inset(0 0 0 0); }
+  50% { opacity: 1; clip-path: inset(0 0 0 0); }
+  52% { opacity: 0.6; clip-path: inset(50% 0 10% 0); }
+  54% { opacity: 1; clip-path: inset(0 0 0 0); }
+}
 }
 
 @keyframes scanline-move {
