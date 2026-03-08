@@ -1,7 +1,7 @@
 import HeroForge from "@/components/HeroForge";
 import Bottleneck from "@/components/Bottleneck";
 import Pipeline from "@/components/Pipeline";
-import Nebula from "@/components/Nebula";
+import NebulaTrailer from "@/components/NebulaTrailer";
 import Terminal from "@/components/Terminal";
 
 const Index = () => {
@@ -10,7 +10,7 @@ const Index = () => {
       <HeroForge />
       <Bottleneck />
       <Pipeline />
-      <Nebula />
+      <NebulaTrailer />
       <Terminal />
 
       {/* Footer */}
