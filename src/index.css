@@ -43,6 +43,9 @@
     --amber-warn: 40 100% 50%;
     --glass: 228 15% 10%;
     --grid-line: 228 10% 14%;
+    --nebula-purple: 270 80% 79%;
+    --nebula-green: 153 100% 50%;
+    --nebula-alert: 0 80% 55%;
 
     --font-mono: 'JetBrains Mono', monospace;
     --font-heading: 'Inter', sans-serif;
@@ -108,6 +111,37 @@
   .metric-pulse {
     animation: metric-pulse 2s ease-in-out infinite;
   }
+
+  .nebula-glow-purple {
+    text-shadow: 0 0 20px hsl(var(--nebula-purple) / 0.6), 0 0 40px hsl(var(--nebula-purple) / 0.3);
+  }
+
+  .nebula-glow-green {
+    text-shadow: 0 0 20px hsl(var(--nebula-green) / 0.6), 0 0 40px hsl(var(--nebula-green) / 0.3);
+  }
+
+  .glitch-text {
+    animation: glitch-skew 4s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  2% { transform: skew(2deg); }
+  4% { transform: skew(0deg); }
+  80% { transform: skew(0deg); }
+  82% { transform: skew(-1deg); }
+  84% { transform: skew(0deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-flash {
+  0%, 100% { opacity: 1; clip-path: inset(0 0 0 0); }
+  5% { opacity: 0.8; clip-path: inset(20% 0 30% 0); }
+  10% { opacity: 1; clip-path: inset(0 0 0 0); }
+  50% { opacity: 1; clip-path: inset(0 0 0 0); }
+  52% { opacity: 0.6; clip-path: inset(50% 0 10% 0); }
+  54% { opacity: 1; clip-path: inset(0 0 0 0); }
+}
 }
 
 @keyframes scanline-move {
